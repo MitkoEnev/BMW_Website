@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Model | BMW</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body style="margin:0;overflow:hidden">
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="assets/logos/home_logo/source/logo.png"  alt="Cars Logo" class="logo-img">
+      </a>
+      <nav class="navbar">
+        <a href="index.html" style="--i: 1">Home</a>
+        <a href="about.html" style="--i: 2">About</a>
+        <a href="engine.html" style="--i: 3">Engine</a>
+        <a class="active" href="model.html" style="--i: 4">Model</a>
+        <a href="contact.html" style="--i: 5">Contact</a>
+      </nav>
+      <div class="social-media">
+        <a href="https://twitter.com/BMW" style="--i: 1" target="_blank"><i class="bxl bx-twitter"></i></a>
+        <a href="https://www.facebook.com/BMW" style="--i: 2" target="_blank"><i class="bxl bx-facebook-square"></i></a>
+        <a href="https://www.instagram.com/bmw" style="--i: 3" target="_blank"><i class="bxl bx-instagram-alt"></i></a>
+      </div>
+    </header>
+    
+    <section class="featured-page">
+      <div class="featured-content">
+        <!-- Car Model on Left -->
+        <div class="featured-car">
+          <model-viewer
+            id="carModel"
+            src="assets/models/2021_bmw_m4_g82/source/2021_bmw_m4_g82.glb"
+            alt="2021 BMW M4 G82 3D model"
+            camera-orbit="0deg 85deg"
+            shadow-intensity="1"
+            environment-image="neutral"
+            exposure="0.8"
+          ></model-viewer>
+        </div>
+        
+        <!-- Key Model on Right -->
+        <div class="featured-key">
+          <model-viewer
+            id="keyModel"
+            src="assets/models/bmw_key/source/bmw_key.glb"
+            alt="BMW Key 3D model"
+            camera-orbit="0deg 75deg"
+            shadow-intensity="1"
+            environment-image="neutral"
+            exposure="0.8"
+          ></model-viewer>
+        </div>
+      </div>
+      
+      <!-- Specifications Table at Bottom -->
+      <div class="specs-container">
+        <div class="specs-table">
+          <div class="spec">
+            <strong>2021</strong>
+            <span>Year</span>
+          </div>
+          <div class="spec">
+            <strong>M4 (G82)</strong>
+            <span>Model</span>
+          </div>
+          <div class="spec">
+            <strong>2-door Coupe</strong>
+            <span>Body Style</span>
+          </div>
+          <div class="spec">
+            <strong>Sports Car</strong>
+            <span>Class</span>
+          </div>
+          <div class="spec">
+            <strong>BMW</strong>
+            <span>Manufacturer</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Rhombus Elements -->
+      <div class="rhombus-left-1"></div>
+      <div class="rhombus-left-2"></div>
+      <div class="rhombus2"></div>
+    </section>
+    
+    <script src="assets/js/model.js"></script>
+  </body>
+</html>

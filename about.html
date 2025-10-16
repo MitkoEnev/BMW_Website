@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About | BMW</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body style="margin:0;overflow:hidden">
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="assets/logos/home_logo/source/logo.png" alt="Cars Logo" class="logo-img">
+      </a>
+      <nav class="navbar">
+        <a href="index.html" style="--i: 1">Home</a>
+        <a class="active" href="about.html" style="--i: 2">About</a>
+        <a href="engine.html" style="--i: 3">Engine</a>
+        <a href="model.html" style="--i: 4">Model</a>
+        <a href="contact.html" style="--i: 5">Contact</a>
+      </nav>
+      <div class="social-media">
+        <a href="https://twitter.com/BMW" style="--i: 1" target="_blank"><i class="bxl bx-twitter"></i></a>
+        <a href="https://www.facebook.com/BMW" style="--i: 2" target="_blank"><i class="bxl bx-facebook-square"></i></a>
+        <a href="https://www.instagram.com/bmw" style="--i: 3" target="_blank"><i class="bxl bx-instagram-alt"></i></a>
+      </div>
+    </header>
+    
+    <section class="about-page">
+      <div class="about-content">
+        <!-- Left: Original Text Content -->
+        <div class="about-text">
+          <h1>Our Passion for Precision</h1>
+          <h3>Where Engineering Meets Art</h3>
+          <p>
+            At BMW, we believe every vehicle tells a story of innovation, 
+            performance, and timeless design. Our focus on the BMW M Series 
+            represents our commitment to automotive excellence.
+          </p>
+          <p>
+            Explore the intersection of cutting-edge technology and breathtaking 
+            design through our immersive 3D experiences.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>50+</strong>
+              <span>Years Heritage</span>
+            </div>
+            <div class="stat">
+              <strong>3D</strong>
+              <span>Interactive Experience</span>
+            </div>
+            <div class="stat">
+              <strong>2025</strong>
+              <span>Excellence Standard</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: 3D Objects Stack -->
+        <div class="about-visual">
+          <div class="large-logos-stack">
+            <!-- BMW Logo on Top -->
+            <div class="logo-3d-bmw">
+              <model-viewer
+                id="bmwLogo3D"
+                src="assets/logos/bmw_logo/source/bmw_emblem.glb"
+                alt="BMW Logo 3D"
+                camera-orbit="0deg 60deg"
+                shadow-intensity="1.2"
+                environment-image="neutral"
+                exposure="1.0"
+              ></model-viewer>
+            </div>
+            
+            <!-- M4 Badge Below -->
+            <div class="logo-3d-m4">
+              <model-viewer
+                id="m4Logo3D"
+                src="assets/logos/m4_logo/source/m4.glb"
+                alt="BMW M4 Badge 3D"
+                camera-orbit="0deg 60deg"
+                shadow-intensity="1.2"
+                environment-image="neutral"
+                exposure="1.0"
+              ></model-viewer>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Background Elements -->
+      <div class="about-rhombus-1"></div>
+      <div class="about-rhombus-2"></div>
+      <div class="about-circle"></div>
+    </section>
+
+    <script src="assets/js/about.js"></script>
+    <script src="assets/js/header.js"></script>
+  </body>
+</html>

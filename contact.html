@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact | BMW</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body style="margin:0;overflow:hidden">
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="assets/logos/home_logo/source/logo.png" alt="BMW Logo" class="logo-img">
+      </a>
+      <nav class="navbar">
+        <a href="index.html" style="--i: 1">Home</a>
+        <a href="about.html" style="--i: 2">About</a>
+        <a href="engine.html" style="--i: 3">Engine</a>
+        <a href="model.html" style="--i: 4">Model</a>
+        <a class="active" href="contact.html" style="--i: 5">Contact</a>
+      </nav>
+      <div class="social-media">
+        <a href="https://twitter.com/BMW" style="--i: 1" target="_blank"><i class="bxl bx-twitter"></i></a>
+        <a href="https://www.facebook.com/BMW" style="--i: 2" target="_blank"><i class="bxl bx-facebook-square"></i></a>
+        <a href="https://www.instagram.com/bmw" style="--i: 3" target="_blank"><i class="bxl bx-instagram-alt"></i></a>
+      </div>
+    </header>
+    
+    <section class="contact-page">
+      <div class="contact-content">
+        <!-- Left: Contact Form -->
+        <div class="contact-form-section">
+          <h1>Contact BMW</h1>
+          <h3>Start Your Journey</h3>
+          <p>
+            Ready to experience the BMW M Series? Send us a message and our team 
+            will get back to you with exclusive offers and test drive opportunities.
+          </p>
+          
+          <form class="simple-contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="input-group">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="input-group">
+                <input type="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="input-group">
+              <select id="subject" name="subject">
+                <option value="">Select a topic</option>
+                <option value="test-drive">Schedule Test Drive</option>
+                <option value="pricing">Pricing Information</option>
+                <option value="technical">Technical Questions</option>
+                <option value="general">General Inquiry</option>
+                <option value="partnership">Partnership Opportunities</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <textarea placeholder="Your Message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="contact-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Right: 3D Business Card Only -->
+        <div class="business-card-container">
+<model-viewer
+  id="businessCardModel"
+  src="assets/models/business_card/source/business_card.glb"
+  alt="BMW Business Card 3D"
+  camera-orbit="180deg 90deg"
+  shadow-intensity="1"
+  environment-image="neutral"
+  exposure="0.8"
+></model-viewer>
+        </div>
+      </div>
+      
+      <!-- Background Elements -->
+      <div class="contact-rhombus-1"></div>
+      <div class="contact-rhombus-2"></div>
+      <div class="contact-circle-1"></div>
+      <div class="contact-circle-2"></div>
+    </section>
+
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>
